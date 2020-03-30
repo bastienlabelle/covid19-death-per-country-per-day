@@ -147,6 +147,11 @@ $json_dataset = json_encode($dataset);
       </div>
       <div class="row mt-5">
         <div class="col">
+          <p class="text-center">Y axis: number of deaths - X axis: starts when a country declares his first death (data only goes back to january 22nd)</p>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col">
           <p class="text-center"><button type="button" class="btn btn-light"id="more-countries">More countries</button></p>
         </div>
       </div>
