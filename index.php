@@ -165,7 +165,7 @@ $json_dataset = json_encode($dataset);
       </div>
       <div class="row mt-5">
         <div class="col">
-          <p class="text-center">Made by <a href="https://bastienlabelle.fr/">Bastien Labelle</a> — You can check the super messy code on GitHub</p>
+          <p class="text-center">Made by <a href="https://bastienlabelle.fr/">Bastien Labelle</a> — You can check the <span class="text-muted">(super messy)</span> code on <a href="https://github.com/bastienlabelle/covid19-death-per-country-per-day">GitHub</a></p>
         </div>
       </div>
     </div>
