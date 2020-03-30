@@ -22,6 +22,14 @@ foreach($rows as $index => $row) {
 
 $data = [];
 $countries_list = [];
+$countries_colors = [
+  'France' => 'orange',
+  'Germany' => 'pink',
+  'Italy' => 'purple',
+  'Spain' => 'green',
+  'United Kingdom' => 'cyan',
+  'US' => 'maroon'
+];
 
 // Parse original data
 foreach($original_data as $row) {
@@ -69,7 +77,11 @@ foreach($data as $country => $dates) {
     $deaths_per_day[] = $date['per_day'];
   }
 
-  $color = '#'.substr(md5(rand()), 0, 6);
+  if($countries_colors[$country]) {
+    $color = $countries_colors[$country];
+  } else {
+    $color = '#'.substr(md5(rand()), 0, 6);
+  }
   $set = [
     'label' => $country,
     'fill' => false,
